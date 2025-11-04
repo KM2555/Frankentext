@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Side-1" id="9qDIdwKoV10MFyie3OJI">
+    <mxGraphModel dx="874" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-1" target="sCdnoWbTNtlizzYp9lJR-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-1" value="start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-3" target="sCdnoWbTNtlizzYp9lJR-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-3" value="embed book&lt;div&gt;and store as string&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-5" target="sCdnoWbTNtlizzYp9lJR-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-5" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;Overwrites non-printable characters in `book` with a space.&lt;br/&gt;for (char *p = book; *p != &#39;\0&#39;; ++p) {&lt;br/&gt;        if (!isprint((unsigned char)*p)) {&lt;br/&gt;            *p = &#39; &#39;;}}&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="186" y="300" width="456" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-7" target="sCdnoWbTNtlizzYp9lJR-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-7" value="&lt;div&gt;Creates tokens on \c book and fills \c tokens and \c succs using&lt;/div&gt;&lt;div&gt;the functions \c token_id and \c append_to_succs.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;char *token_str = strtok(str, delimiters);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; char *prev_token = NULL;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="226" y="505" width="376" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-9" target="sCdnoWbTNtlizzYp9lJR-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-9" value="Returns last character of a string&#xa;char last_char(char *str) {&#xa;  size_t len = strlen(str);&#xa;    if (len == 0) return &#39;\0&#39;;&#xa;    return str[len - 1];&#xa;}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="318" y="630" width="192" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-11" target="sCdnoWbTNtlizzYp9lJR-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-11" value="Returns whether the token ends with `!`, `?` or `.`.&#xa;bool token_ends_a_sentence(char *token) {&#xa;   size_t len = strlen(token);&#xa;    if (len == 0) return false;&#xa;    char c = token[len - 1];&#xa;    return (c == &#39;.&#39; || c == &#39;!&#39; || c == &#39;?&#39;);&#xa;}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="308" y="790" width="212" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-13" target="sCdnoWbTNtlizzYp9lJR-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-13" value="Returns a random `token_id` that corresponds to a `token` that starts with a&#xa;capital letter.&#xa;Uses \c tokens and \c tokens_size.&#xa;size_t random_token_id_that_starts_a_sentence() {&#xa;  size_t indices[MAX_WORD_COUNT];&#xa;    size_t count = 0;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="960" width="312" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-15" target="sCdnoWbTNtlizzYp9lJR-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-15" value="Calculated sentence length for the next iteration.&#xa; Used to stop the loop if the length exceeds sentence size&#xa;  size_t sentence_len_next;&#xa; Concatenates random successors to the sentence as long as&#xa; sentence` can hold them.&#xa;  do {&#xa;      size_t current_token_index = current_token_id;&#xa;        size_t succ_count = succs_sizes[current_token_index];" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1140" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sCdnoWbTNtlizzYp9lJR-17" target="sCdnoWbTNtlizzYp9lJR-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-17" value="Initialize `sentence` and then generate sentences until we find a sentence&#xa; ending with an exclamation mark.&#xa;  do {&#xa;    generate_sentence(sentence, sizeof sentence);&#xa;  } while (last_char(sentence) != &#39;!&#39;);&#xa;  puts(sentence);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="208" y="1310" width="412" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sCdnoWbTNtlizzYp9lJR-19" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1470" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
