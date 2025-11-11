@@ -1,4 +1,3 @@
-#Initial workspace
+BALL ADMIRER
 
-This is the base folder for future uni projects
-The folder should be duplicated when creating a new project
+I haven't been able to get raylib to run even after spending hours trying. But the code should work, as far as i can tell.

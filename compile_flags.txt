@@ -1,6 +1,6 @@
 -std=gnu11
--std=gnu2y
 -g
 -Wall
 -Wextra
--I Include
+-IInclude
+-I../Raylib32/include

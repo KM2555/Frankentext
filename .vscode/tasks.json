@@ -9,7 +9,13 @@
                 "@compile_flags.txt",
                 "./src/main.c",
                 "-o",
-                "main.exe"
+                "main.exe",
+                "-lmsvcrt",
+                "-lraylib",
+                "-lgdi32",
+                "-lwinmm",
+                "-L../Raylib32/lib"
+
             ],
             "group": {
                 "kind": "build",
